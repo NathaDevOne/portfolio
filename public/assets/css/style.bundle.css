@@ -11294,6 +11294,86 @@ fieldset:disabled .btn {
     font-size: calc(1.7rem + 5.4vw) !important
 }
 
+.fs-6x {
+    font-size: calc(1.725rem + 5.7vw) !important;
+}
+
+.fs-6qx {
+    font-size: calc(1.75rem + 6vw) !important;
+}
+
+.fs-6hx {
+    font-size: calc(1.775rem + 6.3vw) !important;
+}
+
+.fs-6tx {
+    font-size: calc(1.8rem + 6.6vw) !important;
+}
+
+.fs-7x {
+    font-size: calc(1.825rem + 6.9vw) !important;
+}
+
+.fs-7qx {
+    font-size: calc(1.85rem + 7.2vw) !important;
+}
+
+.fs-7hx {
+    font-size: calc(1.875rem + 7.5vw) !important;
+}
+
+.fs-7tx {
+    font-size: calc(1.9rem + 7.8vw) !important;
+}
+
+.fs-8x {
+    font-size: calc(1.925rem + 8.1vw) !important;
+}
+
+.fs-8qx {
+    font-size: calc(1.95rem + 8.4vw) !important;
+}
+
+.fs-8hx {
+    font-size: calc(1.975rem + 8.7vw) !important;
+}
+
+.fs-8tx {
+    font-size: calc(2rem + 9vw) !important;
+}
+
+.fs-9x {
+    font-size: calc(2.025rem + 9.3vw) !important;
+}
+
+.fs-9qx {
+    font-size: calc(2.05rem + 9.6vw) !important;
+}
+
+.fs-9hx {
+    font-size: calc(2.075rem + 9.9vw) !important;
+}
+
+.fs-9tx {
+    font-size: calc(2.1rem + 10.2vw) !important;
+}
+
+.fs-10x {
+    font-size: calc(2.125rem + 10.5vw) !important;
+}
+
+.fs-10qx {
+    font-size: calc(2.15rem + 10.8vw) !important;
+}
+
+.fs-10hx {
+    font-size: calc(2.175rem + 11.1vw) !important;
+}
+
+.fs-10tx {
+    font-size: calc(2.2rem + 11.4vw) !important;
+}
+
 .fst-italic {
     font-style: italic !important
 }
@@ -55115,18 +55195,41 @@ body {
     height: 400px
 }
 
-.divider {
+.divider-bottom {
     display: block;
     height: 0;
     width: 70%;
     border-bottom: 1px solid #eff2f5
 }
 
+.divider-left {
+    display: block;
+    height: 0;
+    height: 70%;
+    border-left: 1px solid #eff2f5
+}
+
+/* Fade-in animation */
+.fade-in-animation {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards; /* Fade-in effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Fully transparent */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}
+
 /* Slide-right animation */
 .slide-right-animation {
     opacity: 0;
-    transform: translateX(-15%); /* Start position: off-screen to the left */
+    transform: translateX(-10%); /* Start position: off-screen to the left */
     animation: slideRight 1s ease-out forwards; /* Slide right effect */
+    animation-delay: 0.5s; /* Wait for 0.5 seconds before starting */
 }
 
 /* Define the animation */
@@ -55137,12 +55240,33 @@ body {
     }
 }
 
+/* 
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
-/* Fade-in effect once the image has loaded */
+Fade-in effect once the image has loaded
 .fade-in-visible {
     opacity: 1;
+} */
+ 
+.vertical-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px; /* Adjust the thickness of the line */
+    background-color: white; /* Color of the line */
+  
+}
+
+@media (max-width: 991px) {
+    .vertical-line {
+        position: absolute; /* Ensure it stays above the text */
+        top: -20px; /* Adjust the positioning to be above the text */
+        width: 100%; /* Full-width for horizontal line */
+        height: 3px; /* Height for horizontal line */
+        margin-top: 10px; /* Optional: Adjust spacing from the text */
+    }
 }

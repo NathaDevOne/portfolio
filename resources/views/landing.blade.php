@@ -9,7 +9,33 @@
             @include('layouts.header')
             <!--end::Header-->
             <!--begin::Landing hero-->
-            <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9">
+            <div class="d-flex flex-column flex-center w-100 min-h-350px mx-lg-auto min-h-lg-500px px-9">
+                <!--begin::Heading-->
+                <div class="d-flex flex-column flex-lg-row align-items-center mb-lg-5 min-w-lg-1000px py-10 py-lg-20">
+                    <!-- First Column (Text) -->
+                    <div class="d-flex w-100 w-lg-75">
+                        <h1 class="text-white lh-base fw-bolder fs-3x fs-lg-4x mb-15 fade-in-animation">
+                            <span class="fs-5tx">Hi there! I am</span> 
+                            <br /><span class="fs-6tx">Nathaniel</span>
+                            <br /><span class="fs-6tx">Montano</span>
+                        </h1>
+                    </div>
+                    <!-- Second Column (Image) -->
+                    <div class="d-flex w-100 w-lg-50 position-relative">
+                        <div class="vertical-line fade-in-animation gap-xl-20"></div> <!-- Vertical line -->
+                        <h1 class="text-white lh-base ms-lg-20 fw-bolder fs-3x fs-lg-4x slide-right-animation">
+                            <span style="background: linear-gradient(to right, #874F41 0%, #FBE9D0 100%);
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;">
+                                <span id="kt_landing_hero_text" class="fs-3tx">A Full-stack Web Developer</span>
+                            </span>
+                        </h1>
+                    </div>                                      
+                </div>
+            </div>
+
+            
+            {{-- <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9">
                 <!--begin::Heading-->
                 <div class="d-flex flex-column flex-lg-row mb-lg-10 min-w-lg-1000px py-10 py-lg-20">
                     <!-- First Column (Text) -->
@@ -35,7 +61,7 @@
                     </div>
                 </div>
                 
-            </div>
+            </div> --}}
             <!--end::Landing hero-->
         </div>
         <!--end::Wrapper-->
@@ -1818,7 +1844,7 @@
                     <div class="d-flex align-items-center order-2 order-md-1">
                         <!--begin::Logo-->
                         <a href="../../demo1/dist/landing.html">
-                            <img alt="Logo" src="assets/media/logos/logo-landing.svg"
+                            <img alt="Logo" src="assets/media/svg/second-logo.svg"
                                 class="h-15px h-md-20px" />
                         </a>
                         <!--end::Logo image-->
