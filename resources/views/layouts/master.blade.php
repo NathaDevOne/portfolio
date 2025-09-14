@@ -31,6 +31,7 @@ License: For each use you must have a valid license purchased only from above li
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
 		<link href="assets/css/plugins/plugins.bundle.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
         @stack('styles')
 		<!--end::Global Stylesheets Bundle-->
 	</head>
@@ -53,6 +54,13 @@ License: For each use you must have a valid license purchased only from above li
 		<!--begin::Page Custom Javascript(used by this page)-->
 		<script src="assets/js/landing.js"></script>
 		<script src="assets/js/pricing.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+		<script>
+		AOS.init({
+			duration: 1000, // animation duration
+			once: true // animate only once
+		});
+		</script>
         @stack('scripts')
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->

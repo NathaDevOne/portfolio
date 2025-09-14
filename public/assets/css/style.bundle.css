@@ -55190,9 +55190,22 @@ body {
     border-color: #E95740; /* Adjusted border for hover state */
 }
 
-.symbol.symbol-400px>img {
+.symbol.symbol-400px > img {
     width: 270px;
-    height: 400px
+    height: 400px;
+}
+
+.symbol.symbol-md-300px > img {
+    width: 202px;
+    height: 300px;
+}
+
+/* Reapply symbol-400px styles for large screens */
+@media (min-width: 992px) {
+    .symbol.symbol-400px > img {
+        width: 270px;  /* Adjust if needed */
+        height: 400px; /* Restore to 400px */
+    }
 }
 
 .divider-bottom {
@@ -55270,3 +55283,22 @@ Fade-in effect once the image has loaded
         margin-top: 10px; /* Optional: Adjust spacing from the text */
     }
 }
+
+
+.custom-border {
+    border-bottom: 7px solid #874F41;
+    border-right: 7px solid #874F41;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    box-shadow:
+        0 4px 0 0 #FBE9D0,      /* bottom outer shadow */
+        4px 0 0 0 #FBE9D0,      /* right outer shadow */
+        4px 4px 0 0 #FBE9D0;    /* bottom-right corner shadow to fill the gap */
+        bottom: -7px;
+    right: -7px;
+}
+/* 
+.tns,
+.tns * {
+  border: 1px dashed red;
+} */
